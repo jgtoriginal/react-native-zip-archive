@@ -17,22 +17,22 @@ Pod::Spec.new do |s|
 
   s.dependency 'React'
 
-  # s.subspec 'Core' do |ss|
-  #   ss.source_files = 'ios/*.{h,m}'
-  #   ss.public_header_files = ['ios/RNZipArchive.h']
-  # end
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'ios/*.{h,m}'
+    ss.public_header_files = ['ios/RNZipArchive.h']
+  end
 
-  # s.subspec 'RNZASSZipArchive' do |ss|
-  #   ss.source_files = ['ios/SSZipArchive/*.{h,m}', 'ios/SSZipArchive/aes/*.{h,c}', 'ios/SSZipArchive/minizip/*.{h,c}']
-  #   ss.private_header_files = ['ios/SSZipArchive/*.h', 'ios/SSZipArchive/aes/*.h', 'ios/SSZipArchive/minizip/*.h']
-  # end
+  s.subspec 'RNZASSZipArchive' do |ss|
+    ss.source_files = ['ios/SSZipArchive/*.{h,m}', 'ios/SSZipArchive/aes/*.{h,c}', 'ios/SSZipArchive/minizip/*.{h,c}']
+    ss.private_header_files = ['ios/SSZipArchive/*.h', 'ios/SSZipArchive/aes/*.h', 'ios/SSZipArchive/minizip/*.h']
+  end
 
-  s.source_files  = [
-    'ios/*.{h,m}',
-    'ios/SSZipArchive/*.{h,m}',
-    'ios/SSZipArchive/aes/*.{h,c}',
-    'ios/SSZipArchive/minizip/*.{h,c}',
-    'ios/libRNZipArchive.a'
-  ]
+#   s.source_files  = [
+#     'ios/*.{h,m}',
+#     'ios/SSZipArchive/*.{h,m}',
+#     'ios/SSZipArchive/aes/*.{h,c}',
+#     'ios/SSZipArchive/minizip/*.{h,c}',
+#     'ios/libRNZipArchive.a'
+#   ]
 
 end
